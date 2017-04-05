@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A page for exploring basic HTML documents">
+    <title>NaqaWEB</title>
+  </head>
+    
+  <body>
+      
+    <h1 id="top">Learning the HTML Syntax</h1>
+    
+    <main>
+    <article>
+    <h2>Formatting Page Content</h2>
+      
+    <section>
+      <h3>Controlling Line Breaks</h3>
+        <p>In C++, to skip to the next line in the console, the command is "cout &lt;&lt; endl;".<br> However, in HTML, to insert a line break, you must insert a special tag in between your code.<br> The tag for a line break is &lt;br&gt;</p>
+    </section>
+    <section>
+      <h3>Emphasizing Text</h3>
+        <p>There are a two different ways to show emphasis in text in HTML. <b>Functional emphasis</b>, and <b>aesthetic emphasis.</b></p>
+        <h4>Functional Emphasis</h4>
+            <p>Functional emphasis in HTML includes using the &lt;strong&gt; tag and the &lt;em&gt; tag.<br>
+            The &lt;strong&gt; tag is used to <strong>strongly emphasize</strong> the text. This emphasis is functional because it allows the browser to understand that this piece of text is very significant, and not just bolded for design.<br>
+            The &lt;em&gt; tag is used to <em>emphasize</em> the text. This emphasis is once again, functional, because it allows the browser to understand that the piece of text is significant, but not as significant as the text embedded within the &lt;strong&gt; tag</p>
+        <h4>Aesthetic Emphasis</h4>
+            <p>Aesthetic emphasis is different from functional emphasis because the main purpose is for aesthetic design, rather than functionality. Using the &lt;b&gt; tag and the &lt;i&gt; tag, developers may <b>bolden</b> or <i>italicise</i> the text without outlining it's significance to the browser.</p>
+    </section>
+    <section>
+      <h3>Controlling Whitespace</h3>
+        <p>By default, browsers will not take any whitespace past the first space into consideration.<br>
+        For example, if i type 10 spaces between this words contained within single quotation 'marks,'          'the' white space will not be taken into account by the browser, as you can see on the screen.</p>
+        <p>Any extra desired whitespace can be typed in with a special character entity, which is the &amp;nbsp; character entity. (to display the &amp; symbol, use character entity &amp;amp;)<br>
+        What's special about the &amp;nbsp; entity, is that it will also ensure that the browser will not seperate the words which surround the space through different lines. For example, try and seperate the two words 'Seperate&nbsp;Me!' by resizing the browser (unless I did not code the character entity correctly, you should not be able to do it!)</p>
+    </section>
+    <section>
+      <h3>Inserting Image Files</h3>
+        <p>Okay! Time to share some pictures!<br>
+        Since everybody loves looking at cat videos on the internet, why don't we start with a picture of a kitten?<br>
+        <img src="cute_kitten.jpg" width="1000" height="500" alt="Cutest Kitten NA"></p>
+      <p>How cute was that?!</p>
+        <p>To include an image, use the &lt;img src="file path" width="pixel number" height="pixel number" alt="picture caption"&gt; tag!<br>
+        <b>Note:</b> the image file path starts from the location of the HTML document!</p>
+    </section>
+    </article>
+    
+    <article>
+    <header>
+    <h2>Structuring HTML Documents</h2>
+      <p>Aside from just using headings, HTML5 now further supports website structure by including tags which will increase the quality of a web document's semantics.<br>
+      These tags include the &lt;nav&gt; tag, the &lt;article&gt; tag, the &lt;section&gt; tag, and the &lt;aside&gt; tag.<br>
+      Each of these tags enhance the structure of a web page by doing different things, however they add no aesthetic value.</p>
+    </header>
+        
+    <section>
+      <h3>The &lt;nav&gt; Tag</h3>
+        <p>This tag wraps around the content of the page which is responsible for the document's navigation. This section includes ways to navigate to different pages or may navigate to different sections in the same page. It is a section just for navigation links.</p>
+    </section>
+    <section>
+      <h3>The &lt;article&gt; Tag</h3>
+        <p>The article tag wraps around all the main web document's content. It signifies the start and end of the content in each page.</p>
+    </section>
+    <section>
+      <h3>The &lt;section&gt; Tag</h3>
+        <p>The section tag wraps around each different section in a web document. This can also wrap around some headers which developers might have dedicated to indicate the start and end of each section.</p>
+    </section>
+    <section>
+      <h3>The &lt;aside&gt; Tag</h3>
+        <p>The aside tag wraps around a section which may not be directly related to the page content. This section is significant, however it is not the main focus of the page.</p>
+    </section>
+    <section>
+      <h3>The &lt;div&gt;Tag</h3>
+        <p>The div tag is used as a last resort! Developers use the &lt;div&gt; tag to <i>group</i> together content, rather than <i>sectioning</i> it. It adds no semantic meaning to the outline, unless used alongside a 'class' or 'id' attribute.<br>
+        An example of a situation developers may use this tag for, is to group together content for stylistic effects.</p>
+    </section>
+    <section>
+        <header>
+        <h3>Other Semantic Elements</h3>
+            <p>HTML5 also includes several tags which will increase the web document's semantics, but will not influence document structure. These three tags are outlines below, and they include the &lt;header&gt; tag, the &lt;footer&gt; tag, and the &lt;main&gt; tag.(In fact, this content is wrapped within a &lt;header&gt; tag!)</p>
+        </header>
+        <h4>The &lt;header&gt; Tag</h4>
+            <p>The &lt;header&gt; tag is used by developers to seperate a group of content and indicate that the wrapped content serves as an introduction to the main content. A header can also be wrapped around navigation elements.</p>
+        <h4>The &lt;main&gt; Tag</h4>
+        <h4>The &lt;footer&gt; Tag</h4>
+    </section>
+    </article>
+    <article>
+        <header>
+        <h2>Creating Links</h2>
+            <p>Links are one of the most important aspects of HTML, and are the backbone of the internet. The following section will outline the syntax of creating links in HTML.</p>
+        </header>
+        <section>
+        <h3>Syntax for Link Creation</h3>
+            <p>In order to create a link, the &lt;a&gt; tag must surround the words the developer intents to make as a link.<br>
+            The &lt;a&gt; tag stands for "anchor" tag, and must not be confused with the &lt;link&gt; tag, which is responsible for linking a reference for the HTML document, rather than creating a link in the webpage.<br>
+            Links are surrounded by the &lt;a&gt; tag, however, several attributes must be included in the tag for it to navigate the internet.<br>
+            Following the opening of the tag, the attributes will include the 'href' attribute (which will tell the browser where to find the HTML document you are linking to), and the 'title' attribute (which will give a brief description about the link).</p>
+            <p>This is how the final syntax should look like: &lt;a href="(html file path OR full url)" title="(brief description)"&gt;<i>content which will be the link</i>&lt;/a&gt;</p>
+            <p>Please <a href="r_roll.html" title="Rick Roll Link">click this.</a><br>
+            The following link will redirect the user to an <i>external</i> webpage: <a href="https://www.youtube.com" title="YouTube">YouTube.com</a></p>
+            <h4>Opening a Link in a New Tab</h4>
+                <p>To redirect the link to a new tab, developers will add another attribute to the anchor element. This attribute is called 'target', and to use it to open a new tab, the syntax is: 'target="_blank"</p>
+                <p>The following link will redirect you to <a href="https://www.youtube.com" title="YouTube.com in a new tab" target="_blank">YouTube.com</a> in a <i>new tab</i></p>
+            <h4>Downloading a File From a Link</h4>
+                <p>In order for a user to download a file from a webpage, the developer must reference the link to a file that the browser does not recognize (for example, a zip file). If the browser recognizes the file (for example a pdf), then the browser will open the file for browsing, rather than downloading. To indicate that a link is specifically for downloading a file, developers will add the 'download' attribute to the anchor tag. The value of the dowload attribute will be the name of the user's download.</p>
+                <p>For example, the syntax may look like &lt;a href="cute_kitten.jpg" title="Very cute kitty!" download&gt;<i>insert link name here</i>&lt;/a&gt;</p>
+                <a href="cute_kitten.jpg" title="Very cute kitty!" download>Download kitten picture here!</a>
+            <h4>Linking to Different Sections Within a Webpage</h4>
+                <p>Links also have the ability to redirect the user to different sections within the same webpage, or an external webpage. In order for a link to work like this, the 'href' attribute must point to a specific element within the HTML document. An 'id' attribute may be added to each section element, so that it may be easier for a link to point to it. For example, a developer me attach the 'id' attribute to the first heading and assign it the value of "first". An anchor tag can then link to that element, by assigning the value of the 'href' attribute to be a # followed by the id of the element the developer desires to link to. (e.g. 'href="#one"' if &lt;h2 id="one"&gt; was declared)</p>
+                <p>Try to <a href="#top" title="top of the page">click this now</a> to be redirected to the top of the page!</p>
+        </section>
+    </article>
+    <article>
+        <header>
+            <h2>Creating Lists</h2>
+            <p>The ability to create lists, in HTML and in any application, is critical towards document organization. Lists are great for viewing different elements side by side under different catergories. For example, I may create a list for my favorite movies. My favorite movies will be the category, and all the movies I choose to include in the list would be the list elements.</p>
+        </header>
+        <section>
+            <h3>Un-Ordered Lists</h3>
+        </section>
+    </article>
+    </main>
+      
+      
+  </body>
+    
+</html>
